@@ -1,0 +1,16 @@
+clear
+clc
+close all
+
+syms s t 
+Y_s = [1]
+X_s = [1 2]
+G_s = tf(Y_s, X_s)
+
+
+
+Y_1 = [1 4 6 -8]
+X_1 = [1 3 -5 -1]
+G_1 = tf(Y_1, X_1)
+
+G1s = 

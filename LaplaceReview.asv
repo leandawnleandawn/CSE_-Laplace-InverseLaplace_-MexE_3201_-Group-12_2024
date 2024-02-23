@@ -1,0 +1,26 @@
+clear
+clc
+close all
+
+
+syms s t
+
+func = t^4;
+F1 = laplace(t^4);
+pretty(F1)
+
+f2 = laplace(sin(2*t));
+pretty(f2)
+
+f3 = 5*exp(2*t) - t^3 + 7;
+F3 = laplace(f3);
+
+pretty(F3)
+
+f4 = 1/(s-2);
+F4 = ilaplace(f4);
+pretty(F4);
+
+F5 = 1 /2s-1));
+f5 = ilaplace(F5);
+pretty(f5)
